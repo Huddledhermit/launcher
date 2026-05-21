@@ -1,7 +1,7 @@
 mod application;
-mod icons;
+mod apps;
+mod config;
 
 fn main() {
     println!("Hello, world!");
-    
 }

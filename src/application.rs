@@ -1,3 +1,3 @@
 struct app {}
 
-fn build_application(){}
+fn build_application() {}
