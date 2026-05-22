@@ -1,3 +1,3 @@
 struct app {}
 
-fn build_application() {}
+pub fn build_application() {}

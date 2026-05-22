@@ -3,5 +3,5 @@ mod apps;
 mod config;
 
 fn main() {
-    println!("Hello, world!");
+    application::build_application()
 }
