@@ -4,10 +4,16 @@ use std::{
     path::Path,
 };
 
-fn load_apps() {
-let programs: Vec<program>;
-    let locales_str = freedesktop_desktop_entry::get_languages_from_env();
-    let desktops = desktop_entries(&locales_str);
+pub struct program {
+    Name: String,
+    launch: String,
+    icon: String,
+}
+
+pub fn load_apps() -> Vec<program> {
+    let mut programs: Vec<program> = Vec::new();
+    let locales = freedesktop_desktop_entry::get_languages_from_env();
+    let desktops = desktop_entries(&locales);
     for entry in desktops {
         if entry.no_display() == true {
             continue;
@@ -15,11 +21,15 @@ let programs: Vec<program>;
         if entry.hidden() == true {
             continue;
         }
-        programs += program{}
+        let name = entry.name(&locales).unwrap().to_string();
+        let exec = entry.exec().unwrap().to_string();
+        let icon = entry.icon().unwrap().to_string();
+        programs.push(program {
+            Name: name,
+            launch: exec,
+            icon: icon,
+        })
+    }
+    return programs;
 }
-
-struct program {
-    Name : str,
-    launch_path: OsString,
-    icon: str,
-}
+pub fn on_exec() {}
