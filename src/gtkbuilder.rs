@@ -1,3 +1,6 @@
-use gtk4;
+use freedesktop_desktop_entry::DecodeError::AppID;
+use gtk4::*;
 
-mk_
+pub fn mk_interface(app: &Application) {
+    let mainwindow = ApplicationWindow::builder().application(app).build();
+}

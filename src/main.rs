@@ -1,7 +1,8 @@
 mod application;
 mod apps;
 mod config;
-pub const APP_ID: &str = "launchy";
+mod gtkbuilder;
+
 fn main() {
-    application::build_application()
+    application::build_application();
 }
