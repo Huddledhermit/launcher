@@ -5,9 +5,9 @@ use std::{
 };
 
 pub struct program {
-    Name: String,
-    launch: String,
-    icon: String,
+    pub Name: String,
+    pub launch: String,
+    pub icon: String,
 }
 
 pub fn load_apps() -> Vec<program> {
@@ -33,3 +33,5 @@ pub fn load_apps() -> Vec<program> {
     return programs;
 }
 pub fn on_exec() {}
+pub fn delete() {}
+pub fn add_favorite() {}
