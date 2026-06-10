@@ -1,22 +1,23 @@
 use freedesktop_desktop_entry::DecodeError::AppID;
+use gtk4::prelude::*;
 use gtk4::{prelude::GridExt, *};
 
-use crate::apps::program;
+use crate::{application, apps::program};
 
-pub fn mk_interface(app: &Application, applist: Vec<program>) {
+pub fn mk_interface(app: &Application) {
     let searchbox = SearchBar::new();
 
     let app_grid = Grid::new();
-    let mut r = 0;
-    let mut c = 0;
-    for app in applist {
+    let mut row = 0;
+    let mut coul = 0;
+    for app in application::PROGRAM_DATA.get().unwrap() {
         let app_str: &str = &app.Name;
-        app_grid.attach(&Button::with_label(app_str), c, r, 1, 1);
-        if c < 5 {
-            c += 1;
+        app_grid.attach(&Button::with_label(app_str), coul, row, 1, 1);
+        if coul < 5 {
+            coul += 1;
         } else {
-            c = 0;
-            r += 1
+            coul = 0;
+            row += 1
         }
     }
 
@@ -25,4 +26,5 @@ pub fn mk_interface(app: &Application, applist: Vec<program>) {
         .application(app)
         .child(&app_grid)
         .build();
+    mainwindow.present();
 }

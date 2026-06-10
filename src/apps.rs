@@ -3,7 +3,7 @@ use std::{
     ffi::{OsStr, OsString},
     path::Path,
 };
-
+#[derive(Debug)]
 pub struct program {
     pub Name: String,
     pub launch: String,
@@ -35,3 +35,4 @@ pub fn load_apps() -> Vec<program> {
 pub fn on_exec() {}
 pub fn delete() {}
 pub fn add_favorite() {}
+

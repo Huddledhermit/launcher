@@ -1,0 +1,9 @@
+/home/gavin/launcher/target/debug/deps/freedesktop_desktop_entry-113a56bb4f348039.d: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/decoder.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/exec.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/generic_entry.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/iter.rs
+
+/home/gavin/launcher/target/debug/deps/libfreedesktop_desktop_entry-113a56bb4f348039.rmeta: /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/lib.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/decoder.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/exec.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/generic_entry.rs /home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/iter.rs
+
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/lib.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/decoder.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/exec.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/generic_entry.rs:
+/home/gavin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/freedesktop-desktop-entry-0.8.1/src/iter.rs:
