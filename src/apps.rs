@@ -1,7 +1,9 @@
 use freedesktop_desktop_entry::{DesktopEntry, desktop_entries};
+use gtk4::AccessibleRole::Command;
 use std::{
     ffi::{OsStr, OsString},
     path::Path,
+    process,
 };
 #[derive(Debug)]
 pub struct program {
@@ -32,7 +34,12 @@ pub fn load_apps() -> Vec<program> {
     }
     return programs;
 }
-pub fn on_exec() {}
+pub fn on_exec(cmd: &String) {
+    let exec_cmd = process::Command::new(cmd)
+        .stdin(process::Stdio::null())
+        .stdout(process::Stdio::null())
+        .stderr(process::Stdio::null())
+        .spawn();
+}
 pub fn delete() {}
 pub fn add_favorite() {}
-
