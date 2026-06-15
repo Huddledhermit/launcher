@@ -41,5 +41,5 @@ pub fn on_exec(cmd: &String) {
         .stderr(process::Stdio::null())
         .spawn();
 }
-pub fn delete() {}
-pub fn add_favorite() {}
+pub fn delete_program() {}
+pub fn add_or_remove_favorite() {}

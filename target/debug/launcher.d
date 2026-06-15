@@ -1,0 +1,1 @@
+/home/gavin/launcher/target/debug/launcher: /home/gavin/launcher/src/application.rs /home/gavin/launcher/src/apps.rs /home/gavin/launcher/src/config.rs /home/gavin/launcher/src/gtkbuilder.rs /home/gavin/launcher/src/main.rs
