@@ -2,10 +2,9 @@ use freedesktop_desktop_entry::DecodeError::AppID;
 use gtk4::prelude::*;
 use gtk4::{prelude::GridExt, *};
 
-use crate::apps;
-use crate::{application, apps::program};
+use crate::{application, apps};
 
-pub fn mk_interface(app: &Application) {
+pub fn mk_interface(launcher: &Application) {
     let searchbox = SearchBar::new();
 
     let app_grid = Grid::new();
@@ -27,7 +26,7 @@ pub fn mk_interface(app: &Application) {
 
     // assemble final gui configuratiuon
     let mainwindow = ApplicationWindow::builder()
-        .application(app)
+        .application(launcher)
         .child(&app_grid)
         .build();
     mainwindow.present();
